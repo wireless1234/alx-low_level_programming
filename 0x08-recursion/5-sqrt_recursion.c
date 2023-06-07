@@ -29,4 +29,8 @@ int _sqrt_recursion(int n)
 		end = mid - 1;
 		return (_sqrt_recursion(n));
 	}
+	else
+	{
+		return (-1);
+	}
 }
