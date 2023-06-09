@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 /**
  *_atoi - to integer
  *@s: pointer

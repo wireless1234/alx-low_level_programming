@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 /**
  *_strlen - get s length
  *@s: pointer

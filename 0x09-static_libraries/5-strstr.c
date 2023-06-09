@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 /**
  *_strstr - find needle in haystack
  *@haystack: pointer

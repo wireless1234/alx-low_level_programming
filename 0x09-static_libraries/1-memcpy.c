@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 /**
  *_memcpy - copy memory
  *@dest: variable

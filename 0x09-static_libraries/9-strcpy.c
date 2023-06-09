@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 /**
  *_strcpy - copy string
  *@src: pointer

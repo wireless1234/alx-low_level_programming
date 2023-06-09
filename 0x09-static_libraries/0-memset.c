@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 /**
  *_memset - fill memory block
  *@s: pointer

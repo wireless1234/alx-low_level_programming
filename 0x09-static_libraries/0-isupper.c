@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 /**
  *_isupper - convert to uppercase
  *@c: variable
