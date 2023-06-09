@@ -1,7 +1,8 @@
 #include <stdio.h>
 /**
- *Test function
- *
+ *_abs - absolute value
+ *@n: variable
+ *Return: integer
  */
 int _abs(int n)
 {

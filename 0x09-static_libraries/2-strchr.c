@@ -1,7 +1,9 @@
 #include <stdio.h>
 /**
- *Test function
- *
+ *_strchr - search
+ *@s: pointer
+ *@c: variable
+ *Return: char
  */
 char *_strchr(char *s, char c)
 {

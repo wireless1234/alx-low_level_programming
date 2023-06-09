@@ -1,7 +1,9 @@
 #include <stdio.h>
 /**
- *Test function
- *
+ *_strpbrk - finds
+ *@s: pointer
+ *@accept: pointer
+ *Return: char
  */
 char *_strpbrk(char *s, char *accept)
 {

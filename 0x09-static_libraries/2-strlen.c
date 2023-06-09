@@ -1,7 +1,8 @@
 #include <stdio.h>
 /**
- *Test function
- *
+ *_strlen - get s length
+ *@s: pointer
+ *Return: integer
  */
 int _strlen(char *s)
 {

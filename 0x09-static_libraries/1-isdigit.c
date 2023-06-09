@@ -1,7 +1,8 @@
 #include <stdio.h>
 /**
- *Test function
- *
+ *_isdigit - check if its an integer
+ *@c: variable
+ *Return: int
  */
 int _isdigit(int c)
 {

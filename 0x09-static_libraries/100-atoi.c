@@ -1,7 +1,8 @@
 #include <stdio.h>
 /**
- *Test function
- *
+ *_atoi - to integer
+ *@s: pointer
+ *Return: integer
  */
 int _atoi(char *s)
 {

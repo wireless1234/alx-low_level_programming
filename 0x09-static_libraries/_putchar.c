@@ -1,7 +1,8 @@
 #include <stdio.h>
 /**
- *Test function
- *
+ *_putchar - writes character
+ *@c: character
+ *Return: integer
  */
 int _putchar(char c)
 {

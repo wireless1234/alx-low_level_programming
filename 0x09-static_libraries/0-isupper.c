@@ -1,7 +1,8 @@
 #include <stdio.h>
 /**
- *Test function
- *
+ *_isupper - convert to uppercase
+ *@c: variable
+ *Return: integer
  */
 int _isupper(int c)
 {

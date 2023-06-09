@@ -1,7 +1,8 @@
 #include <stdio.h>
 /**
- *Test function
- *
+ *_isalpha - check alphabetic
+ *@c: character
+ *Return: integer
  */
 int _isalpha(int c)
 {
