@@ -15,11 +15,7 @@ char *_strdup(char *str)
 
 	if (str == NULL)
 	{
-		return (NULL);
-	}
-	else if (*str == NULL)
-	{
-		return (NULL);
+		return (*str);
 	}
 	else
 	{
