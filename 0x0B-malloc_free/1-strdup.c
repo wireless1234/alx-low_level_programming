@@ -9,20 +9,19 @@
  */
 char *_strdup(char *str)
 {
+	char *myStr;
+	int i = 0;
+
 	if (str == NULL)
 	{
 		return (NULL);
 	}
-	char *myStr;
-	int length = strlen(str);
-	int i = 0;
-
-	myStr = (char *)malloc(length * sizeof(char) + 1);
+	myStr = (char *)malloc(strlen(str) * sizeof(char) + 1);
 	if (myStr == NULL)
 	{
 		return (NULL);
 	}
-	while (i <= length)
+	while (i <= strlen(str))
 	{
 		myStr[i] = str[i];
 		i++;
