@@ -21,7 +21,7 @@ char *_strdup(char *str)
 	{
 		return (NULL);
 	}
-	while (i <= strlen(str))
+	while (i <= (int)strlen(str))
 	{
 		myStr[i] = str[i];
 		i++;
