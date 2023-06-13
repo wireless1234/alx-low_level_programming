@@ -18,6 +18,10 @@ char *create_array(unsigned int size, char c)
 	else
 	{
 		newArr = (char *)malloc(size * sizeof(char));
+		if (newArr == NULL)
+		{
+			return (NULL);
+		}
 	}
 	while (i < size)
 	{
