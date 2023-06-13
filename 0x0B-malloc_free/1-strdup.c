@@ -9,17 +9,17 @@
  */
 char *_strdup(char *str)
 {
-	char *myStr;
-	int length = strlen(str);
-	int i = 0;
-
 	if (str == NULL)
 	{
 		return (NULL);
 	}
 	else
 	{
-		myStr = (char *)malloc(length * sizeof(char) + 1);
+		char *myStr;
+		int length = strlen(str);
+		int i = 0;
+
+		myStr = (char *)malloc((length + 1) * sizeof(char));
 		if (myStr == NULL)
 		{
 			return (NULL);
