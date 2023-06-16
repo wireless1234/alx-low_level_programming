@@ -20,7 +20,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	my_arr = malloc(nmemb * size);
 	if (my_arr == NULL)
 		return (NULL);
-	arrPtr = my_arr;
+	arrPtr = (char *)my_arr;
 	for (i = 0; i < nmemb; i++)
 	{
 		arrPtr[i] = 0;
