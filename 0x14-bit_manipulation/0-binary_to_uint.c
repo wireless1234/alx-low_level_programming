@@ -1,5 +1,6 @@
 #include <stdio.h>
-#include <string.h>
+#include <unistd.h>
+#include <stdlib.h>
 /**
  * binary_to_uint - convert binary to unsigned
  * @b: argument
@@ -7,22 +8,16 @@
  */
 unsigned int binary_to_uint(const char *b)
 {
-	if (b == NULL)
-		exit(1);
-
-	size_t length = strlen(b);
 	unsigned int result = 0;
-	unsigned int base = 1;
 
-	for (int i = length - 1; i >= 0; i--)
+	if (b == NULL)
+		return (0);
+	while (*b != '\0')
 	{
-		if (b[i] != '0' && b[i] != '1')
-		exit(1);
-
-		int digit = b[i] - '0';
-		result += digit * base;
-		base *= 2;
+		if (*b != '0' && *b != '1')
+			return 0;
+		result = (result * 2) + (*b - '0');
+		b++;
 	}
-
 	return (result);
 }
