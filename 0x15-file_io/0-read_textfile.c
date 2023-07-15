@@ -2,7 +2,7 @@
 /**
  * read_textfile -  reads a text file and prints it
  * @filename: argument
- * @letter: argument
+ * @letters: argument
  * Return: number of letters it could read and print or (0)
  */
 ssize_t read_textfile(const char *filename, size_t letters)
