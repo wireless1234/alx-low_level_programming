@@ -2,6 +2,12 @@
 #include <stdlib.h>
 #include "lists.h"
 
+/**
+ * delete_dnodeint_at_index - delete node
+ * @head: head pointer
+ * @index: index to delete
+ * Return: 1 on success -1 on error
+ */
 int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 {
 	unsigned int count = 0;
