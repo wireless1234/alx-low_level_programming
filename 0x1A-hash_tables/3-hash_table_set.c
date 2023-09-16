@@ -24,6 +24,8 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		{
 			free(current_node->value);
 			current_node->value = strdup(value);
+			if (current_node->value == NULL)
+				return (0);
 			return (1);
 		}
 		current_node = current_node->next;
@@ -32,7 +34,18 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	if (new == NULL)
 		return (0);
 	new->key = strdup(key);
+	if (new->key == NULL)
+	{
+		free(new);
+		return (0);
+	}
 	new->value = strdup(value);
+	if (new->value == NULL)
+	{
+		free(new->key);
+		free(new);
+		return (0);
+	}
 	new->next = ht->array[index_value];
 	ht->array[index_value] = new;
 	return (1);
